@@ -8,6 +8,14 @@
  */
 
 
+var hobbies = ["walking", "hiking", "basketball", "videogames"];
+
+for (let i =0; i<hobbies.length; i++) {console.log(hobbies[i])}
+
+console.log(hobbies.length);
+
+
+
 // Example output
 // 1. swimming
 // 2. board games
@@ -24,11 +32,26 @@
  *    is in the array
  * 4. Output the array and number of times teal was found
  */
-
-
 // Example output
 // green, red, teal, orange, teal
 // Teal was found 2 times
+
+let colors = ["red", "blue", "teal", "silver", "teal"];
+//console.log(colors);
+var tealCount = 0;
+for (let i =0; i<colors.length; i++) {
+     //console.log(colors[i])
+    
+     if (colors[i] == "teal")
+     {tealCount++}
+}
+
+console.log('teal was found' + tealCount);
+
+
+
+
+
 
 
 /**
@@ -47,6 +70,25 @@
 // Odd 3, 7, 11
 // Even 2, 8, 4, 2
 
+let numbers = [3, 5, 7, 74, 67, 13];
+var oddNumbers = [];
+var evenNumbers = [];
+
+for (let i =0; i < numbers.length; i++) {
+     
+     if (numbers[i] % 2===1) 
+          {oddNumbers.push(numbers[i]);}
+}
+//let numbers1 = [3, 5, 7, 74, 67, 13];
+for (let i =0; i < numbers.length; i++) {
+     
+     if (numbers[i] % 2===0) 
+          {evenNumbers.push(numbers[i]);}
+}
+
+
+console.log("Odds" + " " + oddNumbers);
+console.log("Even" + " " + evenNumbers);
 
 /**
  * #4 Flipping Switches
@@ -56,6 +98,23 @@
  * 3. Write a loop that adds the opposite value to the toggled array
  * 4. Output both arrays
  */
+
+let boo = ["true", "false", "true", "true"];
+var toggled = [];
+
+for (let i = 0; i < boo.length; i++) {
+          console.log(boo[i]);
+}
+
+for (let i = 4; i >=0; i--) {
+     {toggled.push(boo[i]);}
+}
+
+for (let i = 0; i<toggled.length; i++)
+{console.log(toggled[i])};
+
+
+
 
 
 // Example output
